@@ -1,6 +1,9 @@
 # python3
+import heapq
 
 def parallel_processing(n, m, data):
+    threads = [(0,i) for i in range(n)]
+    heapq.heapify(threads)
     output = []
     # TODO: write the function for simulating parallel tasks, 
     # create the output pairs
